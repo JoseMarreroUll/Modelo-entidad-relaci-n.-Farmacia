@@ -92,5 +92,6 @@ Este modelo entidad-relación representa el sistema de gestión de una farmacia.
 
 ### Restricciones Semánticas Propuestas
 - **Restricción de unicidad**: El `Código` de cada entidad (Medicamento, Laboratorio, Cliente, Pedido) debe ser único para evitar duplicación de información.
-- **Restricción de relación de cliente con crédito**: Un cliente con crédito no puede realizar un pedido si tiene pagos pendientes.
+- **Restricción de relación de cliente con crédito**: Un cliente con crédito no puede realizar un pedido si tiene pagos atrasados.
 - **Restricción de stock**: No se puede realizar un pedido si las `Unidades en stock` del medicamento son menores a las solicitadas en el pedido.
+- **Restricción de receta**: Los medicamentos que requieran receta, no pueden ser vendidos sin ella.
